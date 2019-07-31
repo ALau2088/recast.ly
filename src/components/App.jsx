@@ -62,7 +62,8 @@ class App extends React.Component{
       max:5,
       key: YOUTUBE_API_KEY
     }
-    const callback = (data) => console.log(data);
+    console.log(options.query)
+    const callback = (data) => { return console.log('hi',data)};
     searchYouTube(options, callback)
   }
 
